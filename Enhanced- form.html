@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Ensures correct character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Advanced Content & Form</h1>
+    <p>This page demonstrates lists, tables, media, and a validated HTML5 form.</p>
+</header>
+
+<main>
+    <!-- Section 1: List Example -->
+    <section aria-labelledby="list-section">
+        <h2 id="list-section">Top 5 Healthy Foods</h2>
+        <ul>
+            <li>Fresh Fruits</li>
+            <li>Whole Grains</li>
+            <li>Lean Proteins</li>
+            <li>Leafy Greens</li>
+            <li>Nuts & Seeds</li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Table Example -->
+    <section aria-labelledby="table-section">
+        <h2 id="table-section">User Information Table</h2>
+        <table border="1">
+            <caption>Common User Information</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paskali Jibu</td>
+                    <td>paschaljoel63@example.com</td>
+                    <td>+255 753 796 412</td>
+                </tr>
+                <tr>
+                    <td>Rehema Hassan</td>
+                    <td>rehemahassani@example.com</td>
+                    <td>+255 794 536 412</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Media Example -->
+    <section aria-labelledby="media-section">
+        <h2 id="media-section">Media Content</h2>
+        <figure>
+            <img src="healthy-food.jpg" alt="Assorted healthy foods" width="300">
+            <figcaption>Assorted healthy foods for a balanced diet.</figcaption>
+
+                <input type="tel" id="phone" name="phone" placeholder="+255 794 536 412 pattern="^\+255\s\d{3}\s\d{3}\s\d{3}$" required>
+
+                <!-- DOB -->
+                <label for="dob">Date of Birth:</label>
+                <input type="12-04-1998" id="dob" name="dob" required>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="pa" name="12041402" minlength="8" maxlength="20" required>
+
+                <!-- Gender -->
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <!-- Country -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                </select>
+
+                <!-- Readonly field -->
+                <label for="referral">Referral Code:</label>
+                <input type="text" id="referral" name="referral" value="HTML5-STUDENT" readonly>
+
+                <!-- Submit -->
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Learning Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
